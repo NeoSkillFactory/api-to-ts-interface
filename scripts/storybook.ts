@@ -469,6 +469,9 @@ class StorybookGenerator {
     }
 
     const copyRecursive = (src: string, dst: string) => {
+      if (!fs.existsSync(dst)) {
+        fs.mkdirSync(dst, { recursive: true });
+      }
       const entries = fs.readdirSync(src, { withFileTypes: true });
 
       for (const entry of entries) {

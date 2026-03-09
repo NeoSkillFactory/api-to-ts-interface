@@ -47,6 +47,7 @@ interface ReferenceTypes {
     type: string;
     description?: string;
     example?: any;
+    module?: string;
   };
 }
 

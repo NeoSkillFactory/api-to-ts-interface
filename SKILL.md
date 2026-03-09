@@ -7,7 +7,7 @@ description: Automatically generates TypeScript interfaces from REST API respons
 
 ## Overview
 
-The `api-to-ts-interface` skill automates the generation of TypeScript interfaces from REST API responses. It parses JSON/XML response payloads, infers type structures, and produces clean, compilable TypeScript code with accompanying Storybook-style documentation for easy exploration and sharing.
+The `api-to-ts-interface` skill automates the generation of TypeScript interfaces from REST API responses. It parses JSON response payloads, infers type structures, and produces clean, compilable TypeScript code with accompanying Storybook-style documentation for easy exploration and sharing.
 
 **Key Benefits:**
 - Eliminate manual interface writing
@@ -51,7 +51,7 @@ api-to-ts-interface/
 ## Key Components
 
 ### Parser (`scripts/parser.ts`)
-- Accepts JSON/XML strings or file paths
+- Accepts JSON strings or file paths
 - Recursively traverses response structure
 - Infers types: primitive, object, array, union, nullable
 - Detects optional fields and discriminants

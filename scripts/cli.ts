@@ -19,12 +19,10 @@
 
 import * as fs from 'fs';
 import * as path from 'path';
-import { spawn } from 'child_process';
-
-// Import our modules (in production would use compiled JS)
-import { APIParser, ParserOutput } from './parser.js';
-import { CodeGenerator } from './generator.js';
-import { StorybookGenerator } from './storybook.js';
+// Import our modules
+import { APIParser, ParserOutput } from './parser';
+import { CodeGenerator } from './generator';
+import { StorybookGenerator } from './storybook';
 
 interface CLIArgs {
   command?: string;
@@ -87,8 +85,6 @@ class CLI {
     const { command } = this.args;
 
     switch (command) {
-      case 'parse':
-      case 'generatestorybook':
       case 'parse':
         return this.runParse();
       case 'generate':

@@ -49,6 +49,8 @@ class APIParser {
   parse(data: any, rootName: string = 'ApiResponse'): ParserOutput {
     this.visited.clear();
     this.typeCounter.clear();
+    this.types = [];
+    this.typeMap.clear();
 
     const rootType = this.inferType(data, rootName, true);
     const types = this.collectTypes();
