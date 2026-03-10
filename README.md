@@ -44,8 +44,6 @@ Common options:
 
 Source code: [github.com/NeoSkillFactory/api-to-ts-interface](https://github.com/NeoSkillFactory/api-to-ts-interface)
 
-**Price suggestion:** $39 USD
-
 ## License
 
 MIT © NeoSkillFactory
